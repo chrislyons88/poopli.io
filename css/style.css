@@ -1,9 +1,24 @@
-/* imports  */
+/*
+===============================
+GLOBAL STYLES & COMPONENTS
+===============================
+ */
+
+
+/* 
+=======
+imports
+=======  
+*/
 /*@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Raleway:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap');
 
 
-/* root vars */
+/* 
+=======
+root vars
+=======  
+*/
 :root {
 	--brand-main-color: #000;
 	--link-color: var(--brand-main-color);
@@ -11,7 +26,11 @@
 	--box-shadow:  0px 0px 15px 5px rgba(0,0,0,0.13);
 }
 
-/* micro reset */
+/* 
+=======
+micro reset
+=======  
+*/
 *,
 *::before,
 *::after {
@@ -20,7 +39,11 @@
 	box-sizing: border-box;
 }
 
-/* layout with sticky footer */
+/* 
+=======
+layout with sticky footer
+=======  
+*/
 #site-wrapper {
 	background: #fff;
 	display: flex; /*sticky footer*/
@@ -50,7 +73,11 @@ footer {
 	color:  white;
 }
 
-/* branding  */
+/* 
+=======
+branding
+=======  
+*/
 .brand-font {
 	font-family: "Josefin Sans", sans-serif;
 }
@@ -59,7 +86,21 @@ a {
 	text-decoration: none;
 }
 
-/* buttons  */
+/* 
+=======
+icons
+=======  
+*/
+.btn .fa-solid {
+	margin-right: 0.5rem;
+}
+
+
+/* 
+=======
+buttons
+=======  
+*/
 .btn {
 	background: var(--button-color);
 	background: var(--brand-main-color);
@@ -78,12 +119,27 @@ a {
 	color: #fff;
 }*/
 
-/* header */
+
+/*
+===============================
+LOCAL STYLES FOR LAYOUT COMPONENTS
+===============================
+ */
+
+/* 
+=======
+header
+=======  
+*/
 header .brand-font.logo {
 	font-size: 3em;
 }
 
-/* hero section */
+/* 
+=======
+hero section
+=======  
+*/
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -122,7 +178,11 @@ header .brand-font.logo {
   margin-bottom:  3rem;
 }
 
-/* marketing section */
+/* 
+=======
+marketing section
+=======  
+*/
 .marketing {
 	padding-top: 2em;
 	text-align:  center;
@@ -166,7 +226,11 @@ p.lead {
 	margin-bottom: 2rem;
 }
 
-/* footer  */
+/* 
+=======
+footer
+=======  
+*/
 footer .brand-font {
 	font-size: 1.3em;
 }
