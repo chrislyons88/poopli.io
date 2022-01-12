@@ -16,25 +16,27 @@
 		<header>
 			<h1 class="brand-font logo">poopli</h1>
 			<div class="links">
-				<a href="#request-demo" class="btn"><i class="fa-solid fa-toilet"></i> Request a Demo</a>
+				<a href="#request-demo" id="open-modal-demo" class="btn"><i class="fa-solid fa-toilet"></i> Request a Demo</a>
 			</div>
 		</header>
 		<main>
+
 			<section class="hero-image">
 				<div class="hero-text">
 					<h2>We're building tomorrow's bidet, today</h2>
-					<a href="#get-involved" class="btn hollow"><i class="fa-solid fa-user-group"></i> Get Involved</a>
+					<a href="#get-involved" class="btn hollow light"><i class="fa-solid fa-user-group"></i> Get Involved</a>
 				</div>
 			</section>
+
 			<section class="features">
 				<p class="lead">Welcome to the world's most advanced bidet platform.</p>
-				<div class="boxes">
+				<div class="boxes grid-container">
 					<div class="box">
 						<div class="img"></div>
 						<div class="title">AutoAim&trade;</div>
 						<div class="text">Our patented AutoAim technology automatically positions the bidet nozzle to accomodate bidet users of all shapes and sizes.</div>
 						<div class="action">
-							<a href="" class="btn">Check it out!</a>
+							<a href="" class="btn hollow"><i class="fa-solid fa-magnifying-glass"></i> Check it out!</a>
 						</div>
 					</div>
 					<div class="box">
@@ -42,7 +44,7 @@
 						<div class="title">LidarTopo&trade;</div>
 						<div class="text">Our lidar scanners create the most accurate topographical map of the cleaning area and provides that information to our AI service, BidetlyNews</div>
 						<div class="action">
-							<a href="" class="btn">Check it out!</a>
+							<a href="" class="btn hollow"><i class="fa-solid fa-magnifying-glass"></i> Check it out!</a>
 						</div>
 					</div>
 					<div class="box">
@@ -50,55 +52,159 @@
 						<div class="title">BidetlyNews&trade;</div>
 						<div class="text">Listen to a curated list of daily news and unlistened podcasts while in the vicinity of your Poopli, fully customizable via the Poopli mobile app.</div>
 						<div class="action">
-							<a href="" class="btn">Check it out!</a>
+							<a href="" class="btn hollow"><i class="fa-solid fa-magnifying-glass"></i> Check it out!</a>
+						</div>
+					</div>
+
+					<div class="box">
+						<div class="img"></div>
+						<div class="title">AutoAim&trade;</div>
+						<div class="text">Our patented AutoAim technology automatically positions the bidet nozzle to accomodate bidet users of all shapes and sizes.</div>
+						<div class="action">
+							<a href="" class="btn hollow"><i class="fa-solid fa-magnifying-glass"></i> Check it out!</a>
+						</div>
+					</div>
+					<div class="box">
+						<div class="img"></div>
+						<div class="title">LidarTopo&trade;</div>
+						<div class="text">Our lidar scanners create the most accurate topographical map of the cleaning area and provides that information to our AI service, BidetlyNews</div>
+						<div class="action">
+							<a href="" class="btn hollow"><i class="fa-solid fa-magnifying-glass"></i> Check it out!</a>
+						</div>
+					</div>
+					<div class="box">
+						<div class="img"></div>
+						<div class="title">BidetlyNews&trade;</div>
+						<div class="text">Listen to a curated list of daily news and unlistened podcasts while in the vicinity of your Poopli, fully customizable via the Poopli mobile app.</div>
+						<div class="action">
+							<a href="" class="btn hollow"><i class="fa-solid fa-magnifying-glass"></i> Check it out!</a>
 						</div>
 					</div>
 
 				</div>
 			</section>
+
 			<section id="get-involved">
 				<div class="container">
 					<p class="lead">World-class AI training datalake</p>
 					<p>We're building the world's largest dataset of bidet-related images and footage that will power our next-gen aiming algorithms. You can get involved with this effort by submitting your own images and videos on our upcoming submissions portal. Add your email address to the waitlist to be notified when we are ready to accept your submissions!</p>
 					<!-- <p class="lead">Get on the waitlist!</p> -->
-					<form action="" method="post" id="get-notified" class="inline">
+					<form action="" method="post" id="get-notified" class="inline focused">
 						<input type="email" name="email" id="email" placeholder="Enter your email" required>
-						<input type="submit" class="btn hollow" value="Get on the waitlist!">
+						<button class="btn hollow light"><i class="fa-regular fa-paper-plane"></i> Get on the waitlist!</button>
+						<!-- <input type="submit" class="btn hollow light" value="Get on the waitlist!"> -->
 					</form>
 				</div>
 			</section>
+
 			<section class="reviews">
+				<div class="container">
+					<h2>What <em>people</em> are <em>saying</em></h2>
 
 
-<div class="blockquote"><i class="fas fa-quote-left fa2"></i>
-  <div class="text"><i class="fas fa-quote-right fa1"></i>
-    <div>
-      <!-- <h3>Quote the day</h3> -->
-      <p class="lead">I didn't know I needed this.</p>
-      <!-- <p class="lead">I didn't know I needed this.</p> -->
-      <p class="text-right">&mdash; Colon Powell</p>
-    </div>
-  </div>
-</div>
+					<div class="blockquote"><i class="fas fa-quote-left fa2"></i>
+					  <div class="text"><i class="fas fa-quote-right fa1"></i>
+					    <div>
+					      <!-- <h3>Quote the day</h3> -->
+					      <p class="lead">I didn't know I needed this.</p>
+					      <!-- <p class="lead">I didn't know I needed this.</p> -->
+					      <p class="text-right">&mdash; Colon Powell</p>
+					    </div>
+					  </div>
+					</div>
 
-<div class="blockquote"><i class="fas fa-quote-left fa2"></i>
-  <div class="text"><i class="fas fa-quote-right fa1"></i>
-    <div>
-      <!-- <h3>Quote the day</h3> -->
-      <p class="lead">This is by far the greatest innovation of the 20s.</p>
-      <!-- <p class="lead">I didn't know I needed this.</p> -->
-      <p class="text-right">&mdash; Elan Mask</p>
+					<div class="blockquote"><i class="fas fa-quote-left fa2"></i>
+					  <div class="text"><i class="fas fa-quote-right fa1"></i>
+					    <div>
+					      <!-- <h3>Quote the day</h3> -->
+					      <p class="lead">This is, by far, the greatest innovation of the 20s.</p>
+					      <!-- <p class="lead">I didn't know I needed this.</p> -->
+					      <p class="text-right">&mdash; Elan Mask</p>
 
-    </div>
-  </div>
-</div>
+					    </div>
+					  </div>
+					</div>
+
+					<div class="blockquote tall"><i class="fas fa-quote-left fa2"></i>
+					  <div class="text"><i class="fas fa-quote-right fa1"></i>
+					    <div>
+					      <!-- <h3>Quote the day</h3> -->
+					      <p class="lead">
+					      <!-- No more embarrassing conversations with house guests?  -->
+					    Sign me up!</p>
+					      <!-- <p class="lead">I didn't know I needed this.</p> -->
+					      <p class="text-right">&mdash; Seymour Butts</p>
+
+					    </div>
+					  </div>
+					</div>
+				</div>
+
+				
 				<!-- <p class="blockquote">
 					I didn't know I needed this. - Colin Powell
 				</p> -->
 			</section>
+
+
+			<!-- The Modal -->
+			<div id="modal-demo" class="modal">
+
+			  <!-- Modal content -->
+			  <div class="modal-content">
+			    <button class="close">&times;</button>
+			    <h2>Let's get to know each other</h2>
+			    <form id="demo" method="post" action="#">
+			    	<div class="form-grid">
+			    		
+				    	<div class="form-group">
+				    		<label for=""></label>
+				    		<input type="text" placeholder="Your Name">
+				    	</div>
+				    	<div class="form-group">
+				    		<label for=""></label>
+				    		<input type="text" placeholder="Your Title">
+				    	</div>
+				    	<div class="form-group">
+				    		<label for=""></label>
+				    		<input type="text" placeholder="Company Name">
+				    	</div>
+				    	<div class="form-group">
+				    		<label for=""></label>
+				    		<input type="tel" placeholder="Phone Number">
+				    	</div>
+				    	<div class="form-group">
+				    		<label for=""></label>
+				    		<input type="email" placeholder="Email">
+				    	</div>
+				    	<div class="form-group">
+				    		<label for=""></label>
+				    		<select name="" id="" placeholder="Type of Industry">
+				    			<option selected value="0">Type of Industry</option>
+				    			<option value="Aerospace Engineering">Aerospace Engineering</option>
+				    			<option value="AI / Machine Intelligence">AI / Machine Intelligence</option>
+				    			<option value="Commercial Sales">Commercial Sales</option>
+				    		</select>
+				    	</div>
+			    	</div>
+			    	<button class="btn"><i class="fa-solid fa-toilet"></i> Request a Demo</button>
+			    	<!-- <input type="submit" class="btn" value="Request a Demo"> -->
+			    </form>
+			  </div>
+
+			</div>
+
 		</main>
 		<footer>
-			&copy; <span class="current-year">2022</span> <span class="brand-font">poopli</span>. All rights reserved.
+			<!-- <div class="container"> -->
+				<div>
+					&copy; <span class="current-year">2022</span> <span class="brand-font">poopli</span>.
+				</div>
+				<div>
+					All rights reserved.
+				</div> 
+				
+			<!-- </div> -->
 		</footer>
 </body>
 </html>
