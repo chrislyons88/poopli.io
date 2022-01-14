@@ -231,8 +231,8 @@ form.form-error .form-error {
 }
 
 form .g-recaptcha {
-	margin: 0 auto;
-	margin-top: 2rem;
+	margin: 0 auto !important;
+	margin-top: 2rem !important;
 }
 
 @media screen and (max-width: 768px) {
