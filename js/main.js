@@ -54,3 +54,31 @@ window.onclick = function(event) {
     form.reset();
   }
 }
+
+
+
+// =======
+// form submissions
+// =======
+const handleSubmit = (e) => {
+  e.preventDefault()
+  // let myForm = document.getElementById('pizzaOrder');
+  let myForm = e.target;
+  let formData = new FormData(myForm)
+  // console.log(myForm)
+  fetch('/', {
+    method: 'POST',
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString()
+  }).then(() => {
+  	myForm.classList.add("form-success")
+  }).catch((error) => {
+  	myForm.classList.add("form-error")
+  })
+}
+
+const ajaxForms = document.querySelectorAll("form.ajax");
+
+ajaxForms.forEach(form => {
+  form.addEventListener("submit", handleSubmit);
+});

@@ -108,10 +108,20 @@
 					<p class="lead">World-class AI training datalake</p>
 					<p>We're building the world's largest dataset of bidet-related images and footage that will power our next-gen aiming algorithms. You can get involved with this effort by submitting your own images and videos on our upcoming submissions portal. Add your email address to the waitlist to be notified when we are ready to accept your submissions!</p>
 					<!-- <p class="lead">Get on the waitlist!</p> -->
-					<form action="" method="post" id="get-notified" class="inline focused">
-						<input type="email" name="email" id="email" placeholder="Enter your email" required>
-						<button class="btn hollow light"><i class="fa-regular fa-paper-plane"></i> Get on the waitlist!</button>
-						<!-- <input type="submit" class="btn hollow light" value="Get on the waitlist!"> -->
+					<form method="post" id="get-notified" name="get-notified" class="inline ajax" data-netlify="true" netlify-honeypot="contact_me_by_fax_only">
+						<div class="form-success">
+							<p><i class="fa-solid fa-check"></i> You've been added to the waitlist!</p>
+						</div>
+						<div class="form-error">
+							<p><i class="fa-solid fa-circle-exclamation"></i> Something went wrong</p>
+						</div>
+						<div class="form-body">
+							<input type="text" name="contact_me_by_fax_only" style="display:none !important" tabindex="-1" autocomplete="off">
+							<label for="email" class="sr-only">Email</label>
+							<input type="email" name="email" id="email" placeholder="Enter your email" required><button class="btn hollow light"><i class="fa-regular fa-paper-plane"></i> Get on the waitlist!</button>
+							<!-- <input type="submit" class="btn hollow light" value="Get on the waitlist!"> -->
+						</div>
+						
 					</form>
 				</div>
 			</section>
@@ -173,41 +183,50 @@
 			  <div class="modal-content">
 			    <button class="close">&times;</button>
 			    <h2>Let's get to know each other</h2>
-			    <form id="demo" method="post" action="#">
-			    	<div class="form-grid">
-			    		
-				    	<div class="form-group">
-				    		<label for=""></label>
-				    		<input type="text" placeholder="Your Name">
+			    <form id="demo" class="ajax" name="request-demo" method="post" data-netlify="true" netlify-honeypot="contact_me_by_fax_only" data-netlify-recaptcha="true">
+			    	<div class="form-success">
+							<p><i class="fa-solid fa-check"></i> Demo requested</p>
+						</div>
+						<div class="form-error">
+							<p><i class="fa-solid fa-circle-exclamation"></i> Something went wrong</p>
+						</div>
+						<div class="form-body">
+							<div class="form-grid">
+				    		
+					    	<div class="form-group">
+					    		<label for="name" class="sr-only">Your Name</label>
+					    		<input type="text" name="name" placeholder="Your Name" required>
+					    	</div>
+					    	<div class="form-group">
+					    		<label for="title" class="sr-only">Your Title</label>
+					    		<input type="text" name="title" placeholder="Your Title" required>
+					    	</div>
+					    	<div class="form-group">
+					    		<label for="company" class="sr-only">Company Name</label>
+					    		<input type="text" name="company" placeholder="Company Name" required>
+					    	</div>
+					    	<div class="form-group">
+					    		<label for="phone" class="sr-only">Phone Number</label>
+					    		<input type="tel" name="phone" placeholder="Phone Number" required>
+					    	</div>
+					    	<div class="form-group">
+					    		<label for="email" class="sr-only">Email</label>
+					    		<input type="email" name="email" placeholder="Email" required>
+					    	</div>
+					    	<div class="form-group">
+					    		<label for="industry" class="sr-only">Industry</label>
+					    		<select name="industry" required>
+					    			<option selected value="0">Type of Industry</option>
+					    			<option value="Aerospace Engineering">Aerospace Engineering</option>
+					    			<option value="AI / Machine Intelligence">AI / Machine Intelligence</option>
+					    			<option value="Commercial Sales">Commercial Sales</option>
+					    		</select>
+					    	</div>
 				    	</div>
-				    	<div class="form-group">
-				    		<label for=""></label>
-				    		<input type="text" placeholder="Your Title">
-				    	</div>
-				    	<div class="form-group">
-				    		<label for=""></label>
-				    		<input type="text" placeholder="Company Name">
-				    	</div>
-				    	<div class="form-group">
-				    		<label for=""></label>
-				    		<input type="tel" placeholder="Phone Number">
-				    	</div>
-				    	<div class="form-group">
-				    		<label for=""></label>
-				    		<input type="email" placeholder="Email">
-				    	</div>
-				    	<div class="form-group">
-				    		<label for=""></label>
-				    		<select name="" id="" placeholder="Type of Industry">
-				    			<option selected value="0">Type of Industry</option>
-				    			<option value="Aerospace Engineering">Aerospace Engineering</option>
-				    			<option value="AI / Machine Intelligence">AI / Machine Intelligence</option>
-				    			<option value="Commercial Sales">Commercial Sales</option>
-				    		</select>
-				    	</div>
-			    	</div>
-			    	<button class="btn"><i class="fa-solid fa-toilet"></i> Request a Demo</button>
-			    	<!-- <input type="submit" class="btn" value="Request a Demo"> -->
+					    <div data-netlify-recaptcha="true"></div>
+				    	<button class="btn"><i class="fa-solid fa-toilet"></i> Request a Demo</button>
+				    	<!-- <input type="submit" class="btn" value="Request a Demo"> -->
+				    </div>
 			    </form>
 			  </div>
 
@@ -226,7 +245,7 @@
 			<!-- </div> -->
 		</footer>
 
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9714074012145231"
+		<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9714074012145231" -->
      crossorigin="anonymous"></script>
 </body>
 </html>

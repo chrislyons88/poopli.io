@@ -43,6 +43,22 @@ micro reset
 
 /* 
 =======
+utility classes
+=======  
+*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+/* 
+=======
 layout with sticky footer
 =======  
 */
@@ -123,8 +139,9 @@ forms
 form {
 	padding-top: 2rem;
 }
-form.inline {
+form.inline .form-body {
 	display:  flex;
+	justify-content: center;
 }
 input[type=text],
 input[type=email],
@@ -159,6 +176,7 @@ form.inline input[type=password],
 form.inline input[type=tel],
 form.inline select,
 form.inline input[type=submit] {
+	/*border: solid 2px #fff !important;*/
 	border-bottom: 0;
 	margin: 0;
 }
@@ -181,9 +199,39 @@ form.inline input[type=submit] {
 form.inline.focused input[type=submit] {
 	/*background: var(--brand-secondary-color);*/
 }
+form .form-success,
+form .form-error,
+form.form-success .form-body, 
+form.form-error .form-body {
+	max-height: 0;
+	transform: scale(0);
+	transition: transform .3s;
+}
+
+form .form-success .fa-solid,
+form .form-error .fa-solid {
+	margin-right: 1rem;
+}
+
+form.form-success .form-success,
+form.form-error .form-error {
+	padding: 1rem;
+	text-align: center;
+	max-height: 100%;
+	transform: scale(1);
+}
+
+form.form-success .form-success {
+	/*color: green;*/
+	border:  solid 2px green;
+}
+form.form-error .form-error {
+	/*color: red;*/
+	border:  solid 2px red;
+}
 
 @media screen and (max-width: 768px) {
-	form.inline {
+	form.inline .form-body {
 		flex-direction: column;
 	}
 	form.inline input {
