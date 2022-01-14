@@ -108,7 +108,7 @@
 					<p class="lead">World-class AI training datalake</p>
 					<p>We're building the world's largest dataset of bidet-related images and footage that will power our next-gen aiming algorithms. You can get involved with this effort by submitting your own images and videos on our upcoming submissions portal. Add your email address to the waitlist to be notified when we are ready to accept your submissions!</p>
 					<!-- <p class="lead">Get on the waitlist!</p> -->
-					<form method="post" id="get-notified" name="get-notified" class="inline ajax" data-netlify="true" netlify-honeypot="contact_me_by_fax_only">
+					<form method="post" id="get-notified" name="get-notified" class="inline ajax" data-netlify="true" netlify-honeypot="fax">
 						<div class="form-success">
 							<p><i class="fa-solid fa-check"></i> You've been added to the waitlist!</p>
 						</div>
@@ -116,7 +116,7 @@
 							<p><i class="fa-solid fa-circle-exclamation"></i> Something went wrong</p>
 						</div>
 						<div class="form-body">
-							<input type="text" name="contact_me_by_fax_only" style="display:none !important" tabindex="-1" autocomplete="off">
+							<input type="text" name="fax" style="display:none !important" tabindex="-1" autocomplete="off">
 							<label for="email" class="sr-only">Email</label>
 							<input type="email" name="email" id="email" placeholder="Enter your email" required><button class="btn hollow light"><i class="fa-regular fa-paper-plane"></i> Get on the waitlist!</button>
 							<!-- <input type="submit" class="btn hollow light" value="Get on the waitlist!"> -->
@@ -183,7 +183,7 @@
 			  <div class="modal-content">
 			    <button class="close">&times;</button>
 			    <h2>Let's get to know each other</h2>
-			    <form id="demo" class="ajax" name="request-demo" method="post" data-netlify="true" netlify-honeypot="contact_me_by_fax_only" data-netlify-recaptcha="true">
+			    <form id="demo" class="ajax" name="request-demo" method="post" data-netlify="true" netlify-honeypot="fax" data-netlify-recaptcha="true">
 			    	<div class="form-success">
 							<p><i class="fa-solid fa-check"></i> Demo requested</p>
 						</div>
@@ -223,6 +223,7 @@
 					    		</select>
 					    	</div>
 				    	</div>
+				    	<input type="text" name="fax" style="display:none !important" tabindex="-1" autocomplete="off">
 					    <div data-netlify-recaptcha="true"></div>
 				    	<button class="btn"><i class="fa-solid fa-toilet"></i> Request a Demo</button>
 				    	<!-- <input type="submit" class="btn" value="Request a Demo"> -->
@@ -245,7 +246,6 @@
 			<!-- </div> -->
 		</footer>
 
-		<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9714074012145231" -->
-     crossorigin="anonymous"></script>
+		<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9714074012145231" crossorigin="anonymous"></script> -->
 </body>
 </html>
