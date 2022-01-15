@@ -230,7 +230,7 @@ form.form-error .form-error {
 	border:  solid 2px red;
 }
 
-form .g-recaptcha {
+form .g-recaptcha > div {
 	margin: 0 auto !important;
 	margin-top: 2rem !important;
 }

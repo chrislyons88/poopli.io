@@ -79,6 +79,6 @@ const handleSubmit = (e) => {
 
 const ajaxForms = document.querySelectorAll("form.ajax");
 
-// ajaxForms.forEach(form => {
-//   form.addEventListener("submit", handleSubmit);
-// });
+ajaxForms.forEach(form => {
+  form.addEventListener("submit", handleSubmit);
+});
