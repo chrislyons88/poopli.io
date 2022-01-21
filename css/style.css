@@ -517,38 +517,37 @@ header .brand-font.logo {
 }
 @media screen and (max-width:  768px) {
 	header {
-		flex-direction: column;
+		/*flex-direction: column;*/
 		position: sticky;
     top: 0;
-    max-height: 69px;
+    /*max-height: 69px;
     transition: max-height .3s;
     overflow:  hidden;
-		gap: 1rem;
+		gap: 1rem;*/
 	}
 	header.expanded {
-		max-height: 200px;
+		/*max-height: 200px;*/
 	}
 	header .brand-font.logo {
 		font-size: 2rem;
 	}
-	header .links #open-modal-demo {
-		transform:  scale(0);
-		/*position: absolute;*/
-		/*padding: 0;*/
-		/*background: transparent !important;*/
-		/*color: #000;*/
-		/*position:  absolute;
-		right: 1rem;
-		top: 1rem;*/
+	header .links .btn {
+		/*transform:  scale(0);*/
+
 	}
-	header.expanded .links #open-modal-demo {
-		transform:  scale(1);
-		/*position: relative;*/
+	header.expanded .links .btn {
+		/*transform:  scale(1);*/
 	}
 
-	header .links #open-modal-demo .fa-solid {
-		/*display: none;*/
+	header .links .btn .fa-solid {
+
 	}
+}
+
+@media screen and (max-width:  480px) {
+		header .links .btn {
+			padding: .5rem 1.5rem;
+		}
 }
 
 /* 
@@ -565,6 +564,12 @@ footer .brand-font {
 	font-size: 1.3em;
 
 }
+footer a {
+	color: #fff;
+}
+footer .social {
+	margin-left:  auto;
+}
 @media screen and (max-width: 768px) {
 	footer {
 		text-align:  center;
@@ -574,6 +579,9 @@ footer .brand-font {
 	footer div {
 		width:  100%;
 	}
+/*	footer .social { 
+		order: 1 !important; 
+	}*/
 }
 
 /* 
@@ -694,6 +702,11 @@ p.lead {
 	font-weight: 400;
 	margin-bottom: 2rem;
 }
+.features .boxes .box .img {
+	font-size: 3rem;
+	color: #666;
+	margin-bottom: 1rem;
+}
 .features .boxes .box .text{
 	/*font-size: 2.5rem;
 	font-weight: 400;*/
@@ -742,6 +755,7 @@ reviews section
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  text-align:  center;
 }
 .reviews .container {
   display:  flex;
@@ -757,6 +771,9 @@ reviews section
 	font-size:  5rem;
 	margin-bottom: 2rem;
 	font-weight:  400;
+}
+.reviews #open-modal-demo {
+	margin-bottom: 5rem;
 }
 
 @media screen and (max-width: 768px) {
