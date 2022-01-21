@@ -248,6 +248,18 @@ form .g-recaptcha > div {
 
 /* 
 =======
+links
+=======  
+*/
+a {
+	transition: all .3s;
+}
+/*a:hover {
+	color: var(--brand-secondary-color) !important;
+}
+*/
+/* 
+=======
 buttons
 =======  
 */
@@ -569,6 +581,9 @@ footer a {
 }
 footer .social {
 	margin-left:  auto;
+}
+footer .social a:hover {
+	color:  #666;
 }
 @media screen and (max-width: 768px) {
 	footer {
