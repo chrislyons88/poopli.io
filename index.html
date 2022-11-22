@@ -33,7 +33,7 @@
 <body>
 	<div id="site-wrapper">
 		<header>
-			<h1 class="brand-font logo">poopli</h1>
+			<p class="brand-font logo">poopli</p>
 			<div class="links">
 				<!-- <a href="#request-demo" id="open-modal-demo" class="btn"><i class="fa-solid fa-toilet"></i> Request a Demo</a> -->
 				<a class="btn" href="https://poopliio-swag-store.creator-spring.com" title="Get Swag - Opens in new window" target="_blank"><i class="fa-solid fa-bag-shopping"></i> Get Swag</a>
@@ -43,7 +43,7 @@
 
 			<section class="hero-image">
 				<div class="hero-text">
-					<h2>We're building tomorrow's bidet, today</h2>
+					<h1>We're building tomorrow's bidet, today</h1>
 					<a href="#get-involved" class="btn hollow light"><i class="fa-solid fa-user-group"></i> Get Involved</a>
 				</div>
 			</section>
@@ -55,7 +55,7 @@
 					<div class="box">
 						<div class="img"><i class="fa-solid fa-crosshairs"></i></div>
 						<div class="title">AutoAim&trade;</div>
-						<div class="text">Our patented AutoAim technology automatically positions the bidet nozzle to accomodate bidet users of all shapes and sizes.</div>
+						<div class="text">Our patented AutoAim technology automatically positions the bidet nozzle to accommodate bidet users of all shapes and sizes.</div>
 						<!-- <div class="action">
 							<a href="" class="btn hollow"><i class="fa-solid fa-magnifying-glass"></i> Check it out!</a>
 						</div> -->
@@ -173,7 +173,7 @@
 				</div>
 
 
-				<a href="#request-demo" id="open-modal-demo" class="btn"><i class="fa-solid fa-toilet"></i> Request a Demo</a>
+				<a href="#modal-close" id="open-modal-demo" class="btn"><i class="fa-solid fa-toilet"></i> Request a Demo</a>
 
 				
 				<!-- <p class="blockquote">
@@ -183,58 +183,60 @@
 
 
 			<!-- The Modal -->
-			<div id="modal-demo" class="modal">
+			<div id="modal-demo" class="modal" role="dialog" aria-labelledby="dialog-title" aria-modal="true">
 
 			  <!-- Modal content -->
 			  <div class="modal-content">
-			    <button class="close">&times;</button>
-			    <h2>Let's get to know each other</h2>
-			    <form id="demo" class="ajax" name="request-demo" method="post" data-netlify="true" netlify-honeypot="fax" data-netlify-recaptcha="true">
-			    	<div class="form-success">
-							<p><i class="fa-solid fa-check"></i> Demo requested</p>
+				<div class="modal-inner">
+					<a href="#open-modal-demo" class="close" id="modal-close">&times;</a>
+					<h2 id="dialog-title">Let's get to know each other</h2>
+					<form id="demo" class="ajax" name="request-demo" method="post" data-netlify="true" netlify-honeypot="fax" data-netlify-recaptcha="true">
+						<div class="form-success">
+								<p><i class="fa-solid fa-check"></i> Demo requested</p>
+							</div>
+							<div class="form-error">
+								<p><i class="fa-solid fa-circle-exclamation"></i> Something went wrong</p>
+							</div>
+							<div class="form-body">
+								<div class="form-grid">
+								
+								<div class="form-group">
+									<label for="name" class="sr-only">Your Name</label>
+									<input type="text" name="name" id="name" placeholder="Your Name" required>
+								</div>
+								<div class="form-group">
+									<label for="title" class="sr-only">Your Title</label>
+									<input type="text" name="title" id="title" placeholder="Your Title" required>
+								</div>
+								<div class="form-group">
+									<label for="company" class="sr-only">Company Name</label>
+									<input type="text" name="company" id="company" placeholder="Company Name" required>
+								</div>
+								<div class="form-group">
+									<label for="phone" class="sr-only">Phone Number</label>
+									<input type="tel" name="phone" id="phone" placeholder="Phone Number" required>
+								</div>
+								<div class="form-group">
+									<label for="email" class="sr-only">Email</label>
+									<input type="email" name="email" id="email" placeholder="Email" required>
+								</div>
+								<div class="form-group">
+									<label for="industry" class="sr-only">Industry</label>
+									<select name="industry" id="industry" required>
+										<option selected value="0">Type of Industry</option>
+										<option value="Aerospace Engineering">Aerospace Engineering</option>
+										<option value="AI / Machine Intelligence">AI / Machine Intelligence</option>
+										<option value="Commercial Sales">Commercial Sales</option>
+									</select>
+								</div>
+							</div>
+							<input type="text" name="fax" style="display:none !important" tabindex="-1" autocomplete="off">
+							<div data-netlify-recaptcha="true"></div>
+							<button class="btn"><i class="fa-solid fa-toilet"></i> Request a Demo</button>
+							<!-- <input type="submit" class="btn" value="Request a Demo"> -->
 						</div>
-						<div class="form-error">
-							<p><i class="fa-solid fa-circle-exclamation"></i> Something went wrong</p>
-						</div>
-						<div class="form-body">
-							<div class="form-grid">
-				    		
-					    	<div class="form-group">
-					    		<label for="name" class="sr-only">Your Name</label>
-					    		<input type="text" name="name" placeholder="Your Name" required>
-					    	</div>
-					    	<div class="form-group">
-					    		<label for="title" class="sr-only">Your Title</label>
-					    		<input type="text" name="title" placeholder="Your Title" required>
-					    	</div>
-					    	<div class="form-group">
-					    		<label for="company" class="sr-only">Company Name</label>
-					    		<input type="text" name="company" placeholder="Company Name" required>
-					    	</div>
-					    	<div class="form-group">
-					    		<label for="phone" class="sr-only">Phone Number</label>
-					    		<input type="tel" name="phone" placeholder="Phone Number" required>
-					    	</div>
-					    	<div class="form-group">
-					    		<label for="email" class="sr-only">Email</label>
-					    		<input type="email" name="email" placeholder="Email" required>
-					    	</div>
-					    	<div class="form-group">
-					    		<label for="industry" class="sr-only">Industry</label>
-					    		<select name="industry" required>
-					    			<option selected value="0">Type of Industry</option>
-					    			<option value="Aerospace Engineering">Aerospace Engineering</option>
-					    			<option value="AI / Machine Intelligence">AI / Machine Intelligence</option>
-					    			<option value="Commercial Sales">Commercial Sales</option>
-					    		</select>
-					    	</div>
-				    	</div>
-				    	<input type="text" name="fax" style="display:none !important" tabindex="-1" autocomplete="off">
-					    <div data-netlify-recaptcha="true"></div>
-				    	<button class="btn"><i class="fa-solid fa-toilet"></i> Request a Demo</button>
-				    	<!-- <input type="submit" class="btn" value="Request a Demo"> -->
-				    </div>
-			    </form>
+					</form>
+				</div>
 			  </div>
 
 			</div>
